@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #41788a;
+  /* background: linear-gradient(-45deg, #12e06f, #62be4b, #23a6d5, #23d5ab); */
+  font-family: 'Montserrat', sans-serif;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+/* 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+/* @keyframes change{
+    0%{background-color:#4dabcb77;}
+    10%{background-color:#4dabcb91;}
+    20%{background-color: #4dabcbaf;}
+    30%{background-color: #4dabcbc9;}
+    40%{background-color: #4dabcbe1;}
+    50%{background-color:#4daccb;}
+    60%{background-color:#4dabcbe1;}
+    70%{background-color: #4dabcbc9;}
+    80%{background-color: #4dabcbaf;}
+    90%{background-color: #4dabcb91;}
+    100%{background-color:#4dabcb77;}
+} */
+
+
+header {
+  background-color: rgb(37, 116, 148);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+li, a, div.website-name, button.contact {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #96b2b9;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+.welcome-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    margin: 24px;
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 12px 12px;
+    row-gap: 35px;
+}
+
+.button {
+    padding: 170px 200px;
+    background-color: rgb(123, 154, 175);
+    border-radius: 10px;
+    font-size: 50px;
+    width: 600px;
+    height: 200px;
+    border: 4px solid rgb(0, 0, 0);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+}
+
+  .button::before, .button::after {
+    position: absolute;
+    background: rgb(123, 154, 175);
+    z-index: -1;
+    transition: 0.9s;
+    content: '';
+  }
+  
+  .button::before {
+    height: 349px;
+    width: 420px;
+  }
+  
+  .button::after {
+    width: 600px;
+    height: 130px;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+        -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+  
+  .button:hover::before {
+    width: 0px;
+    background: rgb(123, 154, 175);
+  }
+  
+  .button:hover::after {
+    height: 0px;
+    background: rgb(123, 154, 175);
+  }
+  
+  .button:hover {
+    background: rgb(123, 154, 175);
+  }
