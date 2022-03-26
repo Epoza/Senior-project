@@ -31,7 +31,7 @@ body {
     justify-content: space-between;
 }
 
-.button {
+.button, .modal-button {
     width: 160px;
     height: 100px;
     border: 0;
@@ -61,7 +61,7 @@ body {
     border: 6px solid #546747;
 }
 
-.button#back {
+.button#back{
     background-color: #a5a5a5;
     color: #4b4b4b;
     border: 6px solid #4b4b4b;
@@ -77,15 +77,12 @@ body {
 }
 
 button.modal-button {
-    background-color: #00000098;
-    border: 0;
-    border-radius: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #ffffff;
-    font-size: 22px;
     padding: 15px 25px;
     display: flex;
     gap: 10px;
+    background-color: #a5a5a5;
+    color: #4b4b4b;
+    border: 6px solid #4b4b4b;
 }
 
 .modal-container {
@@ -111,6 +108,7 @@ button.modal-button {
 .modal {
     background-color: #fff;
     width: 600px;
+    height: 250px;
     border-radius: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 30px 50px;
