@@ -83,6 +83,8 @@ button.modal-button {
     background-color: #a5a5a5;
     color: #4b4b4b;
     border: 6px solid #4b4b4b;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-container {
