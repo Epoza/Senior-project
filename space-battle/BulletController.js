@@ -9,8 +9,6 @@ export default class bulletController{
         this.maxBulletsAtATime = maxBulletsAtATime;
         this.bulletColor = bulletColor;
         this.soundEnabled = soundEnabled;
-
-        // sound
     }
     draw(ctx) {
             this.bullets = this.bullets.filter((bullet)=>bullet.y + bullet.width > 0);
@@ -35,7 +33,6 @@ export default class bulletController{
         if(this.timeTillNextBulletAllowed <=0 && this.bullets.length < this.maxBulletsAtATime){
             const bullet = new Bullet(this.canvas, x, y, velocity, this.bulletColor)
             this.bullets.push(bullet);
-            //sound
             this.timeTillNextBulletAllowed = timeTillNextBulletAllowed;
         }
     }
