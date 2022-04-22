@@ -72,6 +72,7 @@ function displayGameOver(){
         ctx.font = "25px Arial";
         ctx.fillText("Player 1 Points: " + player1Points, canvas.width / 2.8, canvas.height / 1.4)
         ctx.fillText("Player 2 Points: " + player2Points, canvas.width / 2.8, canvas.height / 4.5)
+        document.getElementById("restartButton").style.display = "block";
     }
 }
 
