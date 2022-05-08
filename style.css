@@ -8,38 +8,10 @@
 
 body {
   background-color: #9CC3D5FF;
-  /* background: linear-gradient(-45deg, #12e06f, #62be4b, #23a6d5, #23d5ab); */
   font-family: 'Montserrat', sans-serif;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
-/* 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
-
-/* @keyframes change{
-    0%{background-color:#4dabcb77;}
-    10%{background-color:#4dabcb91;}
-    20%{background-color: #4dabcbaf;}
-    30%{background-color: #4dabcbc9;}
-    40%{background-color: #4dabcbe1;}
-    50%{background-color:#4daccb;}
-    60%{background-color:#4dabcbe1;}
-    70%{background-color: #4dabcbc9;}
-    80%{background-color: #4dabcbaf;}
-    90%{background-color: #4dabcb91;}
-    100%{background-color:#4dabcb77;}
-} */
-
 
 header {
   background-color: rgb(0, 0, 0);
@@ -50,7 +22,7 @@ header {
   padding: 30px 10%;
 }
 
-li, a, div.website-name, button.contact {
+li, a, div.website-name{
   font-weight: 500;
   font-size: 16px;
   color: #9CC3D5FF;

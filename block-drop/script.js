@@ -58,5 +58,3 @@ function setCommonStyle() {
 var intervalId = setInterval(gameLoop, 1000/60)
 intervalId
 
-
-//make gameover

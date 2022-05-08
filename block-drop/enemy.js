@@ -18,13 +18,6 @@ export default class Enemy{
             ctx.strokeStyle = this.color
         }
 
-        // function createEnemy() {
-        //     new Enemy(500, 20, "green", 5, 1)
-        // }
-        
-        // var enemyInterval = setInterval(createEnemy, 1000);
-        // enemyInterval
-
         if (this.y <= 600) {
             this.y += this.speedY
         }else{
@@ -51,11 +44,3 @@ export default class Enemy{
     }
     
 }
-
-//code for enemy touching bottom
-// if(this.y <= 0) {
-//     gameover
-// }
-
-// if enemy <= 100 or whatever
-//set all enemies to hidden or stop the random enemy function by making variable game over or smthn

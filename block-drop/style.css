@@ -6,11 +6,6 @@ body {
     margin: 0;
     height: 100vh;
     background-color: rgb(25, 163, 60);
-    /*background: linear-gradient(
-        0deg,
-        rgb(17, 51, 161) 0%,
-        rgb(136, 34, 195) 100%
-    );*/
 }
 
 h1 {
