@@ -152,7 +152,7 @@ function drawScore(){
 
 function displayGameOver(){
     if(isGameOver){
-        let mainText = "your score final score was " + score + '!';
+        let mainText = "your final score was " + score + '!';
 
         ctx.fillStyle = 'white';
         ctx.font = "30px Arial";
