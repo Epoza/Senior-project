@@ -34,7 +34,7 @@ function randomlyGenerateBall() {
     var ballRadius = 10 + Math.random() * 5; // size
     var x = WIDTH / 2; // starting x
     var y = HEIGHT / 2; // starting y
-    var color = "#0095DD";
+    var color = "#bf1111";
     var dx = 2 - Math.random() * 10;
     var dy = 2 + Math.random() * -10;
     Ball(id, ballRadius, x, y, color, dx, dy);
@@ -113,7 +113,7 @@ function updateEntity(something){
     }
     if(something == square){
         ctx.rect(square.mouseX, square.mouseY, square.sqSize, square.sqSize);
-        ctx.fillStyle = "#bf1111";
+        ctx.fillStyle = "#0095DD";
     }
     ctx.fill();
     ctx.closePath();
