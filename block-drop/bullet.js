@@ -18,7 +18,6 @@ export default class Bullet {
 
         this.width = 5;
         this.height = 15;
-        // this.color = 'red';
         this.color = this.colors[Math.floor(Math.random() * this.colors.length)];
     }
 
@@ -36,7 +35,8 @@ export default class Bullet {
             this.y + this.height > sprite.y
         ){
             sprite.takeDamage(this.damage);
-            points.innerHTML++
+            let addPoints = points.innerHTML++
+            addPoints
             return true;
         }
         return false;

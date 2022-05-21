@@ -8,6 +8,11 @@ body {
     background-color: rgb(25, 163, 60);
 }
 
+#game {
+    border: 1px solid black;
+    background: black;
+}
+
 h1 {
     margin: 0px;
     margin-bottom: 10px;

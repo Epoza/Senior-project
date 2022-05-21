@@ -1,10 +1,16 @@
 export default class Enemy{
+    enemyColors = [
+        'red',
+        'blue',
+        'green',
+        'yellow',
+        'orange',
+    ];
 
-    constructor(x, y, color, health, speedY){
-        //this.x = x;
+    constructor(x, y, health, speedY){
         this.x = Math.floor(Math.random() * x) + 1;
         this.y = y;
-        this.color = color;
+        this.color = this.enemyColors[Math.floor(Math.random() * this.enemyColors.length)];
         this.health = Math.floor(Math.random() * health) + 1;
         this.speedY = speedY
         this.width = 50;
@@ -17,19 +23,12 @@ export default class Enemy{
         }else {
             ctx.strokeStyle = this.color
         }
-
+        
         if (this.y <= 600) {
             this.y += this.speedY
         }else{
             this.speedY = 0
         }
-
-        if(this.speedY <= 0) {
-            document.getElementById("gameover-btn").style.display = "block";
-        }
-
-        
-
         ctx.fillRect(this.x, this.y, this.width, this.height);
         ctx.strokeRect(this.x, this.y, this.width, this.height);
 

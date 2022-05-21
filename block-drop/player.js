@@ -5,7 +5,7 @@ export default class Player{
         this.bulletController = bulletController;
         this.width = 50
         this.height = 50
-        this.speed = 4
+        this.speed = 5
         
         document.addEventListener('keydown', this.keydown);
         document.addEventListener('keyup', this.keyup);
