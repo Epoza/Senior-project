@@ -11,7 +11,10 @@
     <h1>Block Drop!</h1>
     <h1>Points: <span id="points"></Scorespan></h1>
     <canvas id="game"></canvas>
-    <button id="gameover-btn" onClick="window.location.href=window.location.href">Gameover! Play again?</button>
+    <div class="button-container">
+        <button class="btn" id="backButton" onclick="history.back()">Back</button>
+        <button class="btn" id="gameover-btn" onclick="location.reload()">Play again</button>
+    </div>
     <script src="script.js" type="module"></script>
 </body>
 </html>
