@@ -86,7 +86,7 @@ function getPosition(el) {
 // square doesnt go through canvas
 function mouseBoundaryCheck(){
     // up
-    if(square.mouseY < square.sqSize - 30){ // -30 because of cursor
+    if(square.mouseY < square.sqSize - 30){ // -30 to account for cursor
         square.mouseY = square.sqSize - 30
     }
     //down
@@ -156,7 +156,7 @@ function displayGameOver(){
 
         ctx.fillStyle = 'white';
         ctx.font = "30px Arial";
-        ctx.fillText(mainText, WIDTH / 6, HEIGHT / 2);
+        ctx.fillText(mainText, WIDTH / 4, HEIGHT / 2);
         document.getElementById("restartButton").style.display = "block";
     }
 }
