@@ -8,11 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Space Battle</h1>
-    <canvas id="game"></canvas>
-    <div class="button-container">
-        <button class="btn" id="backButton" onclick="history.back()">Back</button>
-        <button class="btn" id="restartButton" onclick="location.reload()">Reset</button>
+    <div class="container">
+        <div class="block left">
+            <h1 class="directions-title">Directions</h1>
+            <ul>
+                <li>Top player: use A and D to move. W to shoot</li>
+                <li>Bottom player: use left and right arrow keys to move. up arrow to shoot</li>
+                <li>First to 5 points wins!</li>
+            </ul>
+        </div>
+        <div class="center">
+            <h1 class="title-text">Space Battle</h1>
+            <canvas id="game"></canvas>
+            <div class="button-container">
+                <button class="btn" id="backButton" onclick="history.back()">Back</button>
+                <button class="btn" id="restartButton" onclick="location.reload()">Reset</button>
+            </div>
+        </div>
     </div>
     <script type="module" src="script.js"></script>
 </body>
