@@ -30,6 +30,11 @@ body {
     padding-top: 14vh;
 }
 
+ul{
+    font-size: 18px;
+    padding-left: 5vw;
+}
+
 
 .center {
     display: flex;
