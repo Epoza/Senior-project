@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Block Drop!</h1>
-    <h1>Points: <span id="points"></Scorespan></h1>
-    <canvas id="game"></canvas>
-    <div class="button-container">
-        <button class="btn" id="backButton" onclick="history.back()">Back</button>
-        <button class="btn" id="gameover-btn" onclick="location.reload()">Play again</button>
+    <div class="container">
+        <div class="block left">
+            <h1 class="directions-title">Directions</h1>
+            <ul>
+                <li>Use the arrow keys to move</li>
+                <li>Use the spacebar to shoot</li>
+                <li>The game gradually gets more difficult</li>
+            </ul>
+        </div>
+        <div class="block center">
+            <h1 class="center-text game-title">Block Drop!</h1>
+            <h1 class="center-text points-title">Points: <span id="points"></Scorespan></h1>
+            <canvas id="game"></canvas>
+            <div class="button-container">
+                <button class="btn" id="backButton" onclick="history.back()">Back</button>
+                <button class="btn" id="gameover-btn" onclick="location.reload()">Play again</button>
+            </div>
+        </div>
     </div>
     <script src="script.js" type="module"></script>
 </body>
