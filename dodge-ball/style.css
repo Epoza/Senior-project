@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     padding: 0px;
     margin: 0px;
     height: 100vh;
@@ -11,6 +8,36 @@ body {
     font-family: 'PT Sans Narrow', sans-serif;
     overflow: hidden;
     background: rgb(165, 211, 230)
+}
+
+.container{
+    display: flex;
+}
+
+.box {
+    flex: 1;
+}
+
+.left {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 25vw;
+}
+
+.directions-title {
+    width: 142px;
+    font-size: 37px;
+    border-bottom: 2px solid black;
+    padding-top: 14vh;
+}
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
 }
 
 #game {

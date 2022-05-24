@@ -8,11 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Dodge Ball</h1>
-    <canvas id="game" width="600" height="600"></canvas>
-    <div class="button-container">
-        <button class="btn" id="backButton" onclick="history.back()">Back</button>
-        <button class="btn" id="restartButton" onclick="location.reload()">Reset</button>
+    <div class="container">
+        <div class="block left">
+            <h1 class="directions-title">Directions</h1>
+            <ul>
+                <li>Use your mouse to avoid the balls</li>
+                <li>Tip: the balls always spawn in the middle</li>
+            </ul>
+        </div>
+        <div class="block center">
+            <h1 class="title">Dodge Ball</h1>
+            <canvas id="game" width="600" height="600"></canvas>
+            <div class="button-container">
+                <button class="btn" id="backButton" onclick="history.back()">Back</button>
+                <button class="btn" id="restartButton" onclick="location.reload()">Reset</button>
+            </div>
+        </div>
     </div>
     <script src="script.js "></script>
 </body>
