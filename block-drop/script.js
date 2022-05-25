@@ -37,15 +37,12 @@ if(!isGameOver){
             }
             if(points.innerHTML >= 25 && points.innerHTML <= 125){
                 enemies.push(new Enemy(500,20, 8, 0.8))
-                console.log('2')
             }
             if(points.innerHTML >= 125 && points.innerHTML <= 225){
                 enemies.push(new Enemy(500,20, 11, 1))
-                console.log('22')
             }
             if(points.innerHTML >= 225){
                 enemies.push(new Enemy(500,20, 14, 1.2))
-                console.log('222')
             }
         }
         // fastest enemy, lowest health
@@ -55,15 +52,12 @@ if(!isGameOver){
             }
             if(points.innerHTML >= 50 && points.innerHTML <= 150){
                 enemies.push(new Enemy(500,20, 7, 1.3))
-                console.log('3')
             }
             if(points.innerHTML >= 150 && points.innerHTML <= 250){
                 enemies.push(new Enemy(500,20, 9, 1.4))
-                console.log('33')
             }
             if(points.innerHTML >= 250){
                 enemies.push(new Enemy(500,20, 11, 1.7))
-                console.log('333')
             }
         }
         // slowest enemy, highest health
@@ -76,21 +70,16 @@ if(!isGameOver){
             }
             if(points.innerHTML >= 200 && points.innerHTML <= 300){
                 enemies.push(new Enemy(500,20, 20, 0.5))
-                console.log('4')
             }
             if(points.innerHTML >= 300 && points.innerHTML <= 400){
                 enemies.push(new Enemy(500,20, 30, 0.55))
-                console.log('44')
             }
             if(points.innerHTML >= 400){
                 enemies.push(new Enemy(500,20, 40, 0.6))
-                console.log('444')
             }
         }
     }, 1000);
 }
-
-
 
 function gameLoop() {
     ctx.clearRect(0, 0, canvas.width, canvas.height)
